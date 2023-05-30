@@ -6,21 +6,22 @@
             $_SESSION["login"] = 1;
         }
             if  ($_SESSION["casa"]=="axos"){
-                echo '<link rel="stylesheet" href="../statics/axos.css">';
+                echo '<link rel="stylesheet" href="../statics/ajolotes.css">';
                 echo '<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/390/390280.png">';
             }
         
             if  ($_SESSION["casa"]=="halcones"){
-                echo '<link rel="stylesheet" href="../statics/halcones.css">';
+                echo '<link rel="stylesheet" href="../statics/halcones2.css">';
                 echo '<link rel="icon" href="https://i.pinimg.com/736x/c3/87/4e/c3874e3785b92afd7071c87a9c319af4.jpg">';
             }
             if  ($_SESSION["casa"]=="tepos")
             {
-                echo '<link rel="stylesheet" href="../statics/tepos.css">';
+                echo '<link rel="stylesheet" href="../statics/teporingos.css">';
                 echo '<link rel="icon" href="https://akns-images.eonline.com/eol_images/Entire_Site/2015913/rs_634x1024-151013043634-634.Playboy-Bunny-JR-101315.jpg?fit=around%7C634:1024&output-quality=90&crop=634:1024;center,top">';
             }
             echo "<h1>¿Qué quieres hacer ".$_SESSION["usuario"]."?</h1>";
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,20 +38,20 @@
         if( $_SESSION["login"] == 1)
         {
             echo '
-            <form action="ejecucion.php" method="POST" target="_self">
-                <label>Acciones:
+            <form action="resultado.php" method="POST" target="_self">
+                <label><b>Acciones:</b>
                     <br><br>
-                    <input type="radio" name="accion" value=1>Crear
+                    <input type="radio" name="accion" value=1 required autocomplete="on">Crear
                     <br><br><br>
-                    <input type="radio" name="accion" value=2>Renombrar
+                    <input type="radio" name="accion" value=2 required autocomplete="on">Renombrar
                     <br><br><br>
-                    <input type="radio" name="accion" value=3>Eliminar
+                    <input type="radio" name="accion" value=3 required autocomplete="on">Eliminar
                 </label>
-                <br><br><br>
+                <br><br>
                 <button type="submit">Enviar</button>
-            </form><br>
-            <form action="registro.php"> <button type="submit">Historial</button>     </form><br>
-            <form action="logout.php">   <button type="submit">Cerrar sesión</button> </form>
+            </form>
+            <form action="registro.php"><button type="submit">Historial</button></form>
+            <form action="logout.php">   <button type="submit">Cerrar sesión</button></form>
             ';
         }
         else{

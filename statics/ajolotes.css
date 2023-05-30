@@ -1,0 +1,17 @@
+body{
+    background-image: url(https://img.freepik.com/vector-premium/patron-vectorial-lindos-rostros-amables-ajolote-anfibio-sonriente-dibujos-animados-rosa-sobre-fondo-azul_692533-50.jpg?w=2000);
+}
+h1{
+    text-align: center;
+}
+.formulario{
+    text-align: center;
+    height: 300px;
+    width: 300px;
+    background-color: rgb(255, 176, 199);
+    display: grid;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 15px;   
+    border-radius: 0.8rem;
+}
