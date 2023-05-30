@@ -9,12 +9,16 @@
     <link rel="icon" href="https://www.harasdadinco.cl/wp-content/uploads/2022/10/cual-es-el-icono-de-archivo.png">
 </head>
 <body>
+    <?php
+        session_start();
+        $_SESSION["login"] = 0;
+    ?>
     <center>
         <h1>Inicio de sesión</h1>
     </center>
     <div class="formulario-recuadro">
         <h2 style= "font-family: 'Courier New', Courier, monospace;">¡Bienvenidx!</h2>
-        <form action="../dynamics/acciones.php" method="POST">
+        <form action="acciones.php" method="POST">
             <label>Nombre(s):
                 <br>
                 <input type="text" name="nombre" required autocomplete="on"> 
