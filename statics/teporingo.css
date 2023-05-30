@@ -1,0 +1,9 @@
+body{
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/005/702/562/small/seamless-pattern-of-rabbit-domestic-animals-on-colorful-background-illustration-for-textile-vector.jpg);
+}
+.formulario{
+    text-align: center;
+    width: 300px;
+    background-color: rgb(160, 160, 160);
+    margin: 0 auto;
+}
