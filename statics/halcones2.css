@@ -6,7 +6,6 @@ h1{
 }
 .formulario{
     text-align: center;
-    height: 300px;
     width: 300px;
     background-color: rgb(175, 204, 255);
     display: grid;
@@ -15,6 +14,6 @@ h1{
     padding-bottom: 15px;   
     border-radius: 0.8rem;
 }
-
-
-
+#historial{
+    width: 1000px;
+}

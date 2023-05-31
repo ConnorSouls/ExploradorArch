@@ -12,6 +12,8 @@
     <?php
         session_start();
         $_SESSION["login"] = 0;
+        $_SESSION["numCookie"] = 0;
+        setcookie("registro_de_actividad1", "todavía_no_hay_cookies", time()+60*30);
     ?>
     <center>
         <h1>Inicio de sesión</h1>
@@ -26,11 +28,11 @@
             <br><br>
             <label for="casa">Casa:</label>
             <br>
-            <select id="casa" name="casa">
+            <select id="casa" name="casa" required>
                 <option value=""></option>
-                <option value="axos">Ajolotes</option>
+                <option value="ajolotes">Ajolotes</option>
                 <option value="halcones">Halcones</option>
-                <option value="tepos">Teporingos</option>
+                <option value="teporingos">Teporingos</option>
             </select>
             <br><br>
             <button type="submit">Entrar</button>
